@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overseas Logistic Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a class="active"href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+            <a href="#" class="contact-btn">Contact Us</a>
+        </nav>
+    </header>
+    <section class="Home" id="Home"></section>
+		<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="C:\Users\MANOJ\Pictures\Screenshots\scroll 1.png" style="width:300%">
+  <img class="mySlides" src="C:\Users\MANOJ\Pictures\Screenshots\scroll 2.png" style="width:300%">
+  <img class="mySlides" src="C:\Users\MANOJ\Pictures\Screenshots\scroll 3.png" style="width:300%">
+  <img class="mySlides" src="C:\Users\MANOJ\Pictures\Screenshots\scroll 4.png" style="width:300%">
+        </div>
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>International Supply of Equipment, materials, and related services, Procurement & Project Management</h1>
+            <p>Overseas Logistic Service is a global organization providing expertise in supply chain management for emergency and non-emergency projects worldwide.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    <section class="About" id="About">
+        <div class="container">
+            <h2 style="font-size: 40px;text-align: center;">ABOUT US</h2>
+            <h4 class="h4" style="font-size: 20px;">
+    Dear Customer, welcome to the fam :) </h4>
+    <p></p>
+            <p class="p">The Coffee Cup, a part of Coffee Cup Global Limited, is India’s favourite hangout for coffee and conversations. Popularly known as <abbr title="THE COFFEE CUP">TCC</abbr>, we strive to provide the best experience to our guests. Our coffees are sourced from thousands of small coffee planters, who made us who we are today and we're glad to be a part of their lives. We opened our first cafe in 2003 at jublihills in Hyderabad – the youth and the young at heart immediately took to the cafe, and it continues to be one of the most happening places in the city.<abbr title="THE COFFEE CUP">TCC</abbr> to the youth is a “hangout” spot where they meet people, make conversations, and have a whole lot of fun over steaming cups of great coffee.It's been an exciting journey since then to becoming the largest organised retail cafe chain in the country.</p>
+            <h1 style="font-size: 30px">FOUNDER'S STORY</h1>
+            <p class="p">B V S Manoj is the Founder & CEO of The Coffee Cup. He is ardently passionate about coffee, bringing the best of Indian coffees to the Indians. With 9 years of international experience across 5 countries in energy industry at Schlumberger, he's earned accolades like the 2021 International Young Professional Award. Armed with diverse qualifications, including a bachelor's degree from IIT Dhanbad, a Diploma in law from NUJS Kolkata, and a Master’s in Political Marketing from Rome Business School Italy, Manoj aims to democratize specialty coffee in India through his company, The Coffee Cup.</p>
+        </div>
+    </section>
+    <section class="contact-us" id="contact-us">
+    
+            <div class="container">
+    
+                <h2 style="font-size: 40px;text-align: center;">Contact Us </h2><br>
+                <form>
+                    
+                    <label style="font-family:cursive;"for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name " required>
+                    <br><br>
+              
+                    <label style="font-family:cursive;"for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your mail Id" required>
+                    <br><br>
+              
+                    <label style="font-family:cursive;"for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Contact Number" required>
+                    <br><br>
+              
+                    <label style="font-family:cursive;"for="suggestion">Suggestion:</label>
+                    <textarea id="suggestion" name="suggestion" placeholder="Enter your suggestions" rows="4" required></textarea>
+                    <br><br>
+              
+                    <label style="font-family:cursive;"for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" placeholder="Give us your feedback" rows="4" required></textarea>
+                    <br><br>
+              
+                    <input style="font-family:cursive;"type="submit" value="Submit">
+                    <br><br><br>
+            
+                  </form>
+                  
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Overseas Logistic Service. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
